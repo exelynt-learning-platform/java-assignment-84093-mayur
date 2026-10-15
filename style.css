@@ -15,3 +15,17 @@ button {
 li {
     margin: 10px 0;
 }
+.filters {
+    margin: 20px 0;
+}
+
+.filter-btn {
+    margin-right: 8px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.filter-btn.active {
+    font-weight: bold;
+}
