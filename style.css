@@ -15,3 +15,8 @@ button {
 li {
     margin: 10px 0;
 }
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background: white;
+}
