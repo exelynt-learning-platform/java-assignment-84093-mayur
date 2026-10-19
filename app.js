@@ -7,6 +7,13 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 
 let currentFilter = "all";
 
+function toggleTaskStatus(task) {
+    const isCompleted = task.dataset.status === "completed";
+
+    task.dataset.status = isCompleted ? "pending" : "completed";
+    task.classList.toggle("completed", !isCompleted);
+}
+
 function addTask() {
     const taskText = taskInput.value.trim();
 
@@ -18,12 +25,7 @@ function addTask() {
     task.dataset.status = "pending";
 
     task.addEventListener("click", function () {
-        task.dataset.status =
-            task.dataset.status === "completed" ? "pending" : "completed";
-
-        task.style.textDecoration =
-            task.dataset.status === "completed" ? "line-through" : "none";
-
+        toggleTaskStatus(task);
         applyFilter();
     });
 

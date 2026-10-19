@@ -15,6 +15,7 @@ button {
 li {
     margin: 10px 0;
 }
+
 .filters {
     margin: 20px 0;
 }
@@ -28,4 +29,8 @@ li {
 
 .filter-btn.active {
     font-weight: bold;
+}
+
+.completed {
+    text-decoration: line-through;
 }
