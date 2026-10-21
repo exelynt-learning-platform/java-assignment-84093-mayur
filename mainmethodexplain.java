@@ -4,7 +4,7 @@ package javastart;
 
 //Class declaration
 //The class name is mainmethodexplain.
-public class mainmethodexplain {
+public class Mainmethodexplain {
 	 // Main method
     // Program execution starts from the main() method.
     public static void main(String[] args) {
